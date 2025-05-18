@@ -1,0 +1,27 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "irs990",
+    "user": "postgres",
+    "password": "",
+    "ssl_mode": "prefer",
+    "connection_timeout": 30,
+    "pool_size": 5,
+    "pool_timeout": 30,
+    "connection_retries": 3
+  },
+  "processing": {
+    "batch_size": 100,
+    "workers": 4,
+    "log_level": "INFO",
+    "max_files_per_run": 1000,
+    "continue_on_error": true
+  },
+  "storage": {
+    "xml_archive_path": "./xml_archive",
+    "reports_path": "./reports",
+    "cache_enabled": true,
+    "cache_max_size": 500
+  }
+}
